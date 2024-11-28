@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Turbo3D.">
+  <meta name="keywords" content="Turbo3D">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta property="og:image" content="./static/images/model.png">
+  <link rel="preload" href="https://haian-jin.github.io/projects/LVSM/static/videos/teaser_video.mp4" as="video" type="video/mp4" > -->
+
+  <title>Turbo3D: Ultra-fast Text-to-3D Generation</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans&family=Noto+Sans&display=swap" rel="stylesheet">
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans"
+        rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="apple-touch-icon" sizes="96x96" href="./static/images/icons8-village-96.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./static/images/icons8-village-96.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="./static/images/icons8-village-48.png">
+  <link rel="preload" href="./static/css/index.css" as="style">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script defer src="./static/js/bulma-carousel.min.js"></script>
+  <script defer src="./static/js/bulma-slider.min.js"></script>
+  <script defer src="./static/js/index.js"></script>
+  
+
+</head>
+<body>
+
+  
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            Turbo3D: Ultra-fast Text-to-3D Generation</h1>          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://hzhupku.github.io/">Hanzhe Hu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://tianweiy.github.io/">Tianwei Yin</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+                <a href="https://luanfujun.com/">Fujun Luan</a><sup>3</sup>,
+              </span>
+            <span class="author-block">
+                <a href="https://yiweihu.netlify.app/">Yiwei Hu</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.unc.edu/~airsplay/">Hao Tan</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+                <a href="https://zexiangxu.github.io/">Zexiang Xu</a><sup>3</sup>,
+              </span>
+
+            <span class="author-block">
+              <a href="https://sai-bi.github.io/">Sai Bi</a><sup>3</sup>,
+            </span>
+            <br>
+            <span class="author-block">
+                <a href="https://shubhtuls.github.io/">Shubham Tulsiani</a><sup>*1</sup>,
+              </span>
+            <span class="author-block">
+                <a href="https://kai-46.github.io/website/">Kai Zhang</a><sup>*3</sup>,
+              </span>
+            <br>
+              <span class="author-block">
+                <span class="author-block"><sup>*</sup>(Equal Advising) &nbsp;&nbsp;</span>
+              </span>
+              <br>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Carnegie Mellon University,</span>
+            <span class="author-block"><sup>2</sup>Massachusetts Institute of Technology, </span>
+            <span class="author-block"><sup>3</sup>Adobe Research</span>
+          </div> 
+          
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video (Coming soon)</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code(coming soon)</span>
+                  </a>
+              </span>
+              <!-- Dataset Link.
+              <span class="link-block">
+                <a href="https://github.com/RuojinCai/doppelgangers/blob/main/data/doppelgangers_dataset/README.md"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+            </div>
+
+          </div>
+          <p> <br></p>
+          <span class="author-block">
+            <h2 style="font-size: 1.3rem;">Ultra-fast high quality text-to-3D generation in<strong> 0.35s.</strong></h2>
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero teaser">
+
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="display: grid; place-items: center;">
+       
+        <video width="90%" playsinline="" autoplay="" loop="" preload="" muted="">
+            <source src="./static/images/teaser_video.mp4" type="video/mp4">
+        </video>
+
+      <div style="text-align:center;">
+        The prompts for the results above can be found <a href="img/prompts_teaser.txt">here</a>
+        <br/><br/>
+    </div>
+      <h2 class="subtitle has-text-centered">
+        Turbo3D generates high-quality 3D Gaussian Splatting (3DGS) assets from user prompts in less than 1 second on a single A100 GPU. It’s a two-stage pipeline consisting of a highly efficient latent-space few-step multi-view (MV) generator and single-step MV reconstructor. 
+      </h2>
+      <!-- <p style="font-size: small; margin-top: 10px; text-align: center;">
+        (This webpage contains a lot of videos. We suggest using Chrome or Edge on Mac or PC for the best experience.)
+      </p> -->
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-four-fifths"> -->
+      <div class="column">
+        <h2 class="title is-3">Abstract</h2>
+        <hr>
+        <img src="./static/images/teaser.png" class="center" alt="problem_define" width="95%" >
+      
+        <!-- 4/5 size -->
+        <div class="content has-text-justified">
+          <p style="width: 90%; margin:auto; text-justify: inter-word;text-align: justify;">
+            We present Turbo3D, an ultra-fast text-to-3D system capable of generating high-quality Gaussian splatting assets in under one second. Turbo3D employs a rapid 4-step, 4-view diffusion generator and an efficient feed-forward Gaussian reconstructor, both operating in latent space. The 4-step, 4-view generator is a student model distilled through a novel Dual-Teacher approach, which encourages the student to learn view consistency from a multi-view teacher and photo-realism from a single-view teacher. By shifting the Gaussian reconstructor's inputs from pixel space to latent space, we eliminate the extra image decoding time and halve the transformer sequence length for maximum efficiency.
+            Our method demonstrates superior 3D generation results compared to previous baselines, while operating in a fraction of their runtime.  
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- Comparison. -->
+<section class="section">
+<div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+  <!-- <div class="column is-four-fifths"> -->
+  <div class="column ">
+    <h2 class="title is-3">Comparisons to Other Methods</h2>
+    <hr>
+    <div class="content has-text-justified">
+      <p>
+        We compare our method with LGM, Instant3D, SV3D and TripoSR, and visualize the renderings of the generated 3D assets. Since SV3D only outputs videos instead of 3D assets, we directly show the videos with only 21 frames generated by SV3D. Moreover, the inputs of SV3D and TripoSR are the same images, since they are image-to-3D methods.
+      </p>
+    </div>
+    <div class="col justify-content-center text-center">
+        <video width="80%" playsinline="" autoplay="" loop="" preload="" muted="">
+            <source src="./static/images/main_comp.mp4" type="video/mp4">
+        </video>
+    </div> 
+    <div style="text-align:center;">
+        The prompts for the results above can be found <a href="./static/images/prompts_com.txt">here</a>
+        <br/><br/>
+    </div>
+  </div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-four-fifths"> -->
+      <div class="column ">
+        <h2 class="title is-3">Results on a higher resolution 512</h2>
+        <hr>
+        <div class="content has-text-justified">
+          <p>
+            We also show text-to-3D generation results on a higher resolution of 512. 
+          </p>
+        </div>
+        <div class="col justify-content-center text-center">
+            <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                <source src="./static/images/more_512.mp4" type="video/mp4">
+            </video>
+        </div> 
+        <div style="text-align:center;">
+            The prompts for the results above can be found <a href="./static/images/prompts_512.txt">here</a>
+            <br/><br/>
+        </div>
+      </div>
+      </div>
+    </div>
+</section>
+
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-four-fifths"> -->
+      <div class="column ">
+        <h2 class="title is-3">More Results</h2>
+        <hr>
+        <div class="content has-text-justified">
+          <p>
+            We randomly select 72 text prompts from about 450 text prompts and show the results of our Turbo3D.
+          </p>
+        </div>
+        <div class="col justify-content-center text-center">
+            <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                <source src="./static/images/more.mp4" type="video/mp4">
+            </video>
+        </div> 
+        <div style="text-align:center;">
+            The prompts for the results above can be found <a href="./static/images/prompts_more.txt">here</a>
+            <br/><br/>
+        </div>
+      </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{huturbo3d,
+      title={Turbo3D: Ultra-fast Text-to-3D Generation}, 
+      author={Hanzhe Hu and Tianwei Yin and Fujun Luan and Yiwei Hu and Hao Tan and Zexiang Xu and Sai Bi and Shubham Tulsiani and Kai Zhang},
+      year={2024},
+      eprint={},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={}, 
+}
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container" align="center">
+    <div class="column is-8">
+      <div class="content">
+        <p>
+          This website template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      var videos = document.querySelectorAll('#results-carousel video');
+      
+      videos.forEach(function(video) {
+          var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+          
+          if (!isMobile) {
+              // console.log('Autoplay enabled for non-mobile devices');
+              if (!video.classList.contains('single_image_video')) {
+                  video.setAttribute('autoplay', 'autoplay');
+                  // video.play().catch(function(error) {
+                  //     console.error('Video playback failed:', error);
+                  // });
+              }
+
+              // else case is implicit - no action needed for 'single_image_video'
+          } else {
+              console.log('Autoplay disabled for mobile devices');
+          }
+      });
+  });
+</script>
+
+</body>
+</html>
